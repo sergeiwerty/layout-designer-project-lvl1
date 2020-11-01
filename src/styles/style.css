@@ -1,7 +1,7 @@
 :root {
-	--basic-color: #fe8a02;
+	--primary-color: #fe8a02;
 	--primary-dark: #42413c;
-	--secondary-dark: #2a2626;
+	--text-color: #2a2626;
 	--translucent-dark: #908d8b;
 	--basic-white: #fff;
 	--translucent-white: #d7ccc0;
@@ -89,6 +89,8 @@ body {
 	padding: 0 165px;
 
 	background-color: var(--background-light);
+
+	overflow: hidden;
 }
 
 .main-header::before {
@@ -103,6 +105,35 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.1;
+}
+
+.header-container {
+	
+}
+
+.header-heading {
+	margin: 0;
+
+	position: relative;
+	z-index: 1;
+
+	font-family: 'Neucha', cursive;
+	font-size: 72px;
+	line-height: 1.6em;
+	color: var(--text-color);
+}
+
+.colorized-text {
+	color: var(--primary-color);
+}
+
+.illustration {
+	position: absolute;
+	top: 55px;
+	right: -270px;
+	/* z-index: -1; */
+
+	height: 525px;
 }
 
 .intro-info {
