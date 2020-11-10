@@ -13,6 +13,7 @@
 /* Content Section component */
 .content-section {
   position: relative;
+  top: -368px;
 
   min-height: 861px;
   padding: 0 165px;
@@ -64,6 +65,11 @@
 }
 
 /* Card component */
+.card {
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 .cards-item {
   box-sizing: border-box;
   width: 350px;
@@ -73,10 +79,14 @@
   background-color: var(--background-light);
 }
 
+.cards-item:nth-child(n + 4) {
+  min-height: 347px;
+}
+
 .cards-item:first-child {
   padding: 0;
 
-  background-color: none;
+  background-color: transparent;
 }
 
 .heading-2 {
@@ -232,10 +242,10 @@ body {
 
 .biases-cards {
   position: relative;
-  top: -344px;
+  top: -348px;
 
-  min-height: 978px;
-  padding-top: 201px;
+  min-height: 781px;
+  padding-top: 204px;
 
   background-color: var(--primary-dark);
 }
@@ -309,6 +319,7 @@ body {
 .card-text {
   margin-top: 5px;
 
+  color: var(--text-color);
   font-weight: normal;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
