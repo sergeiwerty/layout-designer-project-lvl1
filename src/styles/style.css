@@ -23,26 +23,47 @@
   position: absolute;
   right: 0;
   left: 0;
+  /* z-index: -1; */
 
   height: 100%;
 
   content: "";
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.background {
+  background-color: var(--background-light);
 }
 
 .light-theme {
+  /* color: var(--basic-white); */
   background-color: var(--background-light);
-  background-image: url(../img/bg.png);
+  /* background-image: url(../img/bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  /* opacity: 0.1; */
+}
+
+.bt-light-theme {
+    color: var(--basic-white);
+    background-color: var(--background-dark);
+}
+
+.bt-dark-theme {
+  color: var(--primary-dark);
+  background-color: var(--basic-white);
 }
 
 .dark-theme {
+  color: var(--basic-white);
   background-color: var(--background-dark);
-  background-image: url(../img/bg.png);
+  /* background-image: url(../img/bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  /* opacity: 0.1; */
 }
 
 /* Button component */
@@ -65,10 +86,87 @@
 }
 
 /* Card component */
-.card {
+
+.container {
+  width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
 }
+
+.card-wrapper-top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 73px;
+}
+
+.beases-info {
+  width: 540px;
+
+  /* color: var(--text-color); */
+  font-weight: normal;
+  font-family: 'Neucha', cursive;
+  font-style: normal;
+  line-height: 1.2em;
+}
+
+.keyword {
+  margin: 6px 0 8px;
+
+  /* color: var(--translucent-dark); */
+  font-size: 24px;
+}
+
+.bottom-title {
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 8px;
+
+  /* color: var(--basic-white); */
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 30px;
+
+  /* background-color: var(--background-dark); */
+}
+
+.card-wrapper-bottom p {
+  margin-top: 6px;
+}
+
+.card-heading {
+  margin: 14px 0 24px;
+
+  font-weight: inherit;
+  font-size: 60px;
+  line-height: 1.1em;
+}
+
+.detailed-info {
+  margin: 0;
+
+  font-size: 34px;
+  line-height: 40.8px;
+}
+
+.picture-wrapper {
+  width: 540px;
+  height: 405px;
+  background-color: var(--basic-white);
+}
+
+.card-picture {
+  position: relative;
+  width: 540px;
+  height: 405px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/* Cards component */
 
 .cards-item {
   box-sizing: border-box;
@@ -198,7 +296,7 @@ body {
 
   display: flex;
 
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-weight: normal;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -210,10 +308,6 @@ body {
 .text-container {
   flex: 1 1 540px;
 }
-
-/* .text-container:last-child {
-  margin-bottom: 3px;
-} */
 
 .header-btn {
   margin-left: 570px;
@@ -244,7 +338,7 @@ body {
   position: relative;
   top: -348px;
 
-  min-height: 781px;
+  min-height: 799px;
   padding-top: 204px;
 
   background-color: var(--primary-dark);
