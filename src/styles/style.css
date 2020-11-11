@@ -23,15 +23,15 @@
   position: absolute;
   right: 0;
   left: 0;
-  /* z-index: -1; */
 
   height: 100%;
 
-  content: "";
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+
+  content: "";
 }
 
 .background {
@@ -39,31 +39,29 @@
 }
 
 .light-theme {
-  /* color: var(--basic-white); */
   background-color: var(--background-light);
-  /* background-image: url(../img/bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.1; */
 }
 
 .bt-light-theme {
-    color: var(--basic-white);
-    background-color: var(--background-dark);
+  color: var(--basic-white);
+
+  background-color: var(--background-dark);
 }
 
 .bt-dark-theme {
   color: var(--primary-dark);
+
   background-color: var(--basic-white);
 }
 
 .dark-theme {
   color: var(--basic-white);
+
   background-color: var(--background-dark);
-  /* background-image: url(../img/bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.1; */
 }
 
 /* Button component */
@@ -103,7 +101,6 @@
 .beases-info {
   width: 540px;
 
-  /* color: var(--text-color); */
   font-weight: normal;
   font-family: 'Neucha', cursive;
   font-style: normal;
@@ -113,7 +110,6 @@
 .keyword {
   margin: 6px 0 8px;
 
-  /* color: var(--translucent-dark); */
   font-size: 24px;
 }
 
@@ -122,15 +118,12 @@
   margin-bottom: 20px;
   padding-left: 8px;
 
-  /* color: var(--basic-white); */
   font-weight: 700;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  text-transform: uppercase;
   line-height: 30px;
-
-  /* background-color: var(--background-dark); */
+  text-transform: uppercase;
 }
 
 .card-wrapper-bottom p {
@@ -155,11 +148,13 @@
 .picture-wrapper {
   width: 540px;
   height: 405px;
+
   background-color: var(--basic-white);
 }
 
 .card-picture {
   position: relative;
+
   width: 540px;
   height: 405px;
 
@@ -296,7 +291,6 @@ body {
 
   display: flex;
 
-  /* color: var(--text-color); */
   font-weight: normal;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
