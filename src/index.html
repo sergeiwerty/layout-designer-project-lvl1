@@ -44,35 +44,35 @@
       <div class="cards-wrapper">
         <div class="cards-item"><h2 class="heading-2 caption-card-heading"><span class="colorized-text">5 когнитивных искажений</span><br> о существовании которых стоит помнить</h2></div>
         <div class="cards-item">
-        <a class="item-link" href="">
+        <a class="item-link" href="#effect1">
           <span class="num-title">1</span>
           <h3 class="heading-phrase">Эффект ИКЕА</h3>
           <p class="card-text">Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
         </a>
       </div>
         <div class="cards-item">
-        <a class="item-link" href="">
+        <a class="item-link" href="#effect2">
           <span class="num-title">2</span>
           <p class="heading-phrase">Преждевременная оптимизация</p>
           <p class="card-text">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
         </a>
       </div>
         <div class="cards-item">
-        <a class="item-link" href="">
+        <a class="item-link" href="#effect3">
           <span class="num-title">3</span>
           <p class="heading-phrase">Искажение новизны</p>
           <p class="card-text">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
         </a>
       </div>
         <div class="cards-item">
-        <a class="item-link" href="">
+        <a class="item-link" href="#effect4">
           <span class="num-title">4</span>
           <p class="heading-phrase">Гиперболическое обесценивание</p>
           <p class="card-text">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
         </a>
       </div>
         <div class="cards-item">
-        <a class="item-link" href="">
+        <a class="item-link" href="#effect5">
           <span class="num-title">5</span>
           <p class="heading-phrase">Ошибка планирования</p>
           <p class="card-text">Неправильно рассчитывать время необходимое для завершения задачи.</p>
@@ -81,7 +81,7 @@
       </div>
     </section>
 
-    <section class="card content-section light-theme background">
+    <section class="card content-section light-theme background" id="effect1">
       <div class="container">
         <div class="card-wrapper-top">
           <div class="picture-wrapper">
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section class="card content-section dark-theme background">
+    <section class="card content-section dark-theme background" id="effect2">
       <div class="container">
         <div class="card-wrapper-top">
           <div class="beases-info">
@@ -137,16 +137,16 @@
       </div>
     </section>
 
-    <section class="card content-section light-theme background">
+    <section class="card content-section light-theme background" id="effect3">
       <div class="container">
         <div class="card-wrapper-top">
+          <div class="picture-wrapper">
+            <img src="img/3.png" alt="" class="card-picture">
+          </div>
           <div class="beases-info">
             <p class="keyword">Когнитивные искажения</p>
             <h2 class="card-heading">Искажение новизны</h2>
             <p class="detailed-info">Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
-          </div>
-          <div class="picture-wrapper">
-            <img src="img/3.png" alt="" class="card-picture">
           </div>
         </div>
         <p class="bottom-title bt-light-theme">Как проявляется</p>
@@ -165,7 +165,7 @@
       </div>
     </section>
 
-    <section class="card content-section dark-theme background">
+    <section class="card content-section dark-theme background" id="effect4">
       <div class="container">
         <div class="card-wrapper-top">
           <div class="beases-info">
@@ -193,16 +193,16 @@
       </div>
     </section>
 
-    <section class="card content-section light-theme background">
+    <section class="card content-section light-theme background" id="effect5">
       <div class="container">
         <div class="card-wrapper-top">
+          <div class="picture-wrapper">
+            <img src="img/5.png" alt="" class="card-picture">
+          </div>
           <div class="beases-info">
             <p class="keyword">Когнитивные искажения</p>
             <h2 class="card-heading">Ошибка планирования</h2>
             <p class="detailed-info">Неправильно рассчитывать время необходимое для завершения задачи.</p>
-          </div>
-          <div class="picture-wrapper">
-            <img src="img/5.png" alt="" class="card-picture">
           </div>
         </div>
         <p class="bottom-title bt-light-theme">Как проявляется</p>
@@ -224,21 +224,31 @@
 
   </main>
   <footer class="site-footer">
-    <form action="" class="subscription">
-      <h2 class="footer-heading"></h2>
-      <input type="text" class="email">
-      <label for=""></label>
-      <button class="email-submit"></button>
-      <p class="conditions">
-        <a href="" class="conditions-page">правила сервиса</a>
-      </p>
+    <form action="" class="subscription" method="POST">
+      <h2 class="footer-heading visually-hidden">Форма обратной связи</h2>
+      <div class="column-text">
+        <p>Хотите узнать больше?</p>
+        <p>Подпишитесь на обновления</p>
+      </div>
+      <div class="column-input">
+        <label class="email-label" for="email-text">Электронная почта</label>
+        <div class="input-wrapper">
+          <input type="text" name="email-adress" class="email-input" id="email-text" placeholder="Ваша электронная почта"> 
+          <button class="email-submit"></button>
+        </div>
+        <p class="conditions">
+          Подписываясь, вы принимаете
+          <a href="" class="conditions-page">правила сервиса</a>
+        </p>
+      </div>
     </form>
     <div class="site-info">
-      <p class="copyright-text"></p>
+      <p class="copyright-text">© 2020 Сергей Дишли</p>
       <p class="site-sources">
-        <a href="" class="sources-anchor"></a>
+        По материалам статьи
+        <a href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b" class="sources-anchor">Yash Ranadive Cognitive Biases in Programming</a>
       </p>
-      <a href="https://ru.hexlet.io/" class="hexlet-site"></a>
+      <a href="https://ru.hexlet.io/" class="hexlet-site">Курсы программирования Hexlet</a>
     </div>
   </footer>
 </body>
