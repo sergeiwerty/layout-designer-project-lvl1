@@ -14,21 +14,27 @@
 /* Content Section component */
 .content-section {
   position: relative;
-  top: -368px;
+  top: -135px;
 
   min-height: 861px;
   padding: 0 165px;
 }
 
 .content-section:nth-of-type(n + 4) {
-  top: -381px;
+  top: -150px;
 }
 
 .content-section:nth-of-type(n + 7) {
-  top: -420px;
+  top: -190px;
+
+  height: 300px;
 }
 
-.content-section::before {
+.background {
+  background-color: var(--background-light);
+}
+
+.background::before {
   position: absolute;
   right: 0;
   left: 0;
@@ -41,10 +47,6 @@
   opacity: 0.1;
 
   content: "";
-}
-
-.background {
-  background-color: var(--background-light);
 }
 
 .light-theme {
@@ -99,6 +101,11 @@
 /* Card component */
 
 .container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
@@ -108,10 +115,14 @@
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 73px;
+  width: 100%;
+
+  margin-bottom: 60px;
 }
 
 .beases-info {
+  position: relative;
+
   width: 540px;
 
   font-weight: normal;
@@ -120,13 +131,9 @@
   line-height: 1.2em;
 }
 
-.keyword {
-  margin: 6px 0 8px;
-
-  font-size: 24px;
-}
-
 .bottom-title {
+  flex-basis: 100%;
+
   height: 30px;
   margin-bottom: 20px;
   padding-left: 8px;
@@ -141,21 +148,6 @@
 
 .card-wrapper-bottom p {
   margin-top: 6px;
-}
-
-.card-heading {
-  margin: 14px 0 24px;
-
-  font-weight: inherit;
-  font-size: 60px;
-  line-height: 1.1em;
-}
-
-.detailed-info {
-  margin: 0;
-
-  font-size: 34px;
-  line-height: 40.8px;
 }
 
 .picture-wrapper {
@@ -195,29 +187,6 @@
   background-color: transparent;
 }
 
-.heading-2 {
-  max-width: 700px;
-  margin: 0 auto;
-
-  color: var(--text-color);
-  font-weight: normal;
-  font-size: 60px;
-  font-family: 'Neucha', cursive;
-  line-height: 66px;
-  text-align: center;
-}
-
-.heading-phrase {
-  margin: -7px 0 0;
-
-  color: var(--primary-color);
-  font-weight: normal;
-  font-size: 34px;
-  font-family: 'Neucha', cursive;
-  font-style: normal;
-  line-height: 1.2em;
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -235,10 +204,9 @@
 }
 
 body {
-  width: 100%;
   margin: 0 auto;
 
-  color: var(--secondary-dark);
+  color: var(--text-color);
   font-weight: 400;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
@@ -252,57 +220,103 @@ body {
   position: relative;
 
   width: 100%;
-  min-height: 1005px;
+  min-height: 860px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 
   overflow: hidden;
 
   background-color: var(--background-light);
 }
 
-.main-header::before {
-  position: absolute;
-  right: 0;
-  left: 0;
-
-  height: 100%;
-
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  opacity: 0.1;
-
-  content: "";
-}
-
 .header-container {
-  position: relative;
   z-index: 1;
 
   box-sizing: border-box;
-  width: 1110px;
-  margin: 0 auto;
+  padding-top: 0;
 }
 
-.header-heading {
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  font-weight: 400;
+  font-family: 'Neucha', cursive;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 1.2em;
+}
+
+.heading-space {
   z-index: 1;
 
-  min-height: 468px;
-  margin: 0;
+  margin: 0 0 208px 0;
   padding-top: 23px;
+}
 
-  color: var(--text-color);
-  font-weight: normal;
-  font-size: 72px;
-  font-family: 'Neucha', cursive;
-
+h2,
+.h2 {
+  font-size: 60px;
   line-height: 1.2em;
+  text-align: center;
+}
+
+h3,
+.h3 {
+  margin: -7px 0 0;
+
+  font-size: 34px;
+  line-height: 1.2em;
+}
+
+.item-link .h3 {
+  color: var(--primary-color);
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+}
+
+.beases-info .h4 {
+  margin: 6px 0 8px;
+}
+
+.intro-heading {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.caption-card-heading {
+  color: var(--basic-white);
+  font-size: 52px;
+  line-height: 120%;
+
+  text-align: start;
+
+  background-color: var(--primary-dark);
+}
+
+.f-size-52 {
+  margin: 0 auto;
+
+  font-size: 52px;
 }
 
 .colorized-text {
   color: var(--primary-color);
+}
+
+.card-heading {
+  margin: 14px 0 24px;
+
+  text-align: start;
 }
 
 .illustration {
@@ -314,15 +328,12 @@ body {
   height: 595px;
 }
 
-.text-wrapper {
+.container-col {
   position: relative;
   z-index: 1;
 
   display: flex;
 
-  font-weight: normal;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
   line-height: 1.6em;
 
   column-gap: 30px;
@@ -336,18 +347,16 @@ body {
   margin-left: 570px;
 }
 
+.main-content {
+  margin-bottom: -90px;
+}
+
 .intro-info {
-  position: relative;
-  top: -245px;
+  text-align: center;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 775px;
+.intro-spacing {
   padding-top: 100px;
-
-  background-color: var(--basic-white);
 }
 
 .video {
@@ -359,10 +368,10 @@ body {
 
 .biases-cards {
   position: relative;
-  top: -348px;
+  top: -131px;
 
   min-height: 799px;
-  padding-top: 204px;
+  padding-top: 105px;
 
   background-color: var(--primary-dark);
 }
@@ -378,37 +387,12 @@ body {
   column-gap: 30px;
 }
 
-.text {
-  margin: 0;
-  margin-top: 10px;
-  margin-bottom: 33px;
-
-  color: var(--text-color);
-  font-weight: normal;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6em;
-}
-
-.intro-heading {
-  margin-bottom: 30px;
+.paragraph-margin {
+  margin: 10px 0 33px 0;
 }
 
 .cards-heading {
   font-size: 52px;
-}
-
-.caption-card-heading {
-  color: var(--basic-white);
-  font-weight: normal;
-  font-size: 52px;
-  font-family: 'Neucha', cursive;
-  font-style: normal;
-  line-height: 120%;
-
-  text-align: start;
-
-  background-color: var(--primary-dark);
 }
 
 .item-link {
@@ -419,6 +403,7 @@ body {
   margin: -24px;
   padding: 24px;
 
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -440,23 +425,17 @@ body {
 .card-text {
   margin-top: 5px;
 
-  color: var(--text-color);
-  font-weight: normal;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
   line-height: 1.6em;
 }
 
 .item-link:hover .num-title,
-.item-link:hover .heading-phrase,
+.item-link:hover .h3,
 .item-link:hover .card-text {
   color: var(--basic-white);
 }
 
 .site-footer {
-  position: relative;
-  top: -320px;
+  margin-bottom: 54px;
 }
 
 .subscription {
@@ -496,7 +475,7 @@ body {
 
   box-sizing: border-box;
 
-  padding: 15px;
+  padding: 15px 15px;
 }
 
 .input-wrapper {
@@ -544,8 +523,6 @@ body {
 
   font-weight: bold;
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
   line-height: 1.6em;
   letter-spacing: 0.05em;
 }
@@ -559,10 +536,7 @@ body {
 }
 
 .conditions {
-  font-weight: normal;
   font-size: 12px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
 }
 
 .conditions-page {
@@ -579,10 +553,7 @@ body {
   margin: 0 auto;
   margin-top: 75px;
 
-  font-weight: normal;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
   line-height: 22.4px;
 }
 
