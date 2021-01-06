@@ -14,22 +14,34 @@
 /* Content Section component */
 .content-section {
   position: relative;
-  /* top: -135px; */
-  top: -146px;
 
-  /* min-height: 861px; */
+  /* top: -146px; */
+  top: -122px;
+
   min-height: 805px;
   padding: 0 165px;
 }
 
 .content-section:nth-of-type(n + 4) {
-  top: -160px;
+  /* top: -160px; */
+  top: -138px;
+}
+
+.content-section:nth-of-type(n + 5) {
+  /* top: -160px; */
+  top: -153px;
+}
+
+.content-section:nth-of-type(n + 6) {
+  /* top: -160px; */
+  top: -168px;
 }
 
 .content-section:nth-of-type(n + 7) {
-  top: -190px;
+  top: -176px;
 
-  height: 300px;
+  min-height: 916px;
+  margin-bottom: -77px;
 }
 
 .bg-questions {
@@ -119,13 +131,13 @@
 
   width: 100%;
 
-  margin-bottom: 60px;
+  margin-bottom: 85px;
 }
 
 .beases-info {
   position: relative;
 
-  width: 540px;
+  width: 502px;
 
   font-weight: normal;
   font-family: "Neucha", cursive;
@@ -136,7 +148,7 @@
 .bottom-title {
   flex-basis: 100%;
 
-  height: 30px;
+  height: 26px;
   margin-bottom: 20px;
   padding-left: 8px;
 
@@ -149,12 +161,12 @@
 }
 
 .card-wrapper-bottom p {
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 .picture-wrapper {
-  width: 540px;
-  height: 405px;
+  width: 578px;
+  height: 433px;
 
   background-color: var(--basic-white);
 }
@@ -162,8 +174,8 @@
 .card-picture {
   position: relative;
 
-  width: 540px;
-  height: 405px;
+  width: 580px;
+  height: 433px;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -171,10 +183,16 @@
 /* Cards component */
 
 .cards-item {
+  /* box-sizing: border-box;
+  width: 350px;
+  min-height: 310px; */
+
+  /* padding: 24px; */
+
   box-sizing: border-box;
   width: 350px;
-  min-height: 310px;
-  padding: 24px;
+  min-height: 322px;
+  padding: 9px 24px;
 
   background-color: var(--light);
 }
@@ -221,8 +239,9 @@ body {
 .main-header {
   position: relative;
 
+  box-sizing: border-box;
   width: 100%;
-  min-height: 860px;
+  min-height: 914px;
   margin: 0 auto;
   padding: 100px 0 0 0;
 
@@ -255,8 +274,8 @@ h1 {
 }
 
 .heading-space {
-  margin: 0 0 208px 0;
-  padding-top: 23px;
+  margin: 0 0 182px 0;
+  padding-top: 4px;
 }
 
 h2,
@@ -272,6 +291,8 @@ h3,
 
   font-size: 34px;
   line-height: 1.2em;
+
+  user-select: all;
 }
 
 .item-link .h3 {
@@ -284,7 +305,7 @@ h4,
 }
 
 .beases-info .h4 {
-  margin: 6px 0 8px;
+  margin: 6px 0 5px;
 }
 
 .intro-heading {
@@ -314,18 +335,18 @@ h4,
 }
 
 .card-heading {
-  margin: 14px 0 24px;
+  margin: 5px 0 37px;
 
   text-align: start;
 }
 
 .illustration {
   position: absolute;
-  top: -85px;
-  right: -342px;
+  top: -45px;
+  right: -273px;
   z-index: -1;
 
-  height: 595px;
+  height: 530px;
 }
 
 .container-col {
@@ -344,7 +365,7 @@ h4,
 }
 
 .header-btn {
-  margin-top: 30px;
+  margin-top: 35px;
   margin-left: 570px;
 }
 
@@ -362,10 +383,9 @@ h4,
 
 .frame-wrapper {
   width: 919px;
-  height: 574px;
-  padding-top: 28px;
-
+  height: 607px;
   margin: 0 auto;
+  padding-top: 22px;
 }
 
 .video {
@@ -373,19 +393,25 @@ h4,
   z-index: 1;
 
   width: 919px;
-  height: 541px;
+  height: 562px;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .biases-cards {
   position: relative;
-  top: -131px;
+  top: -122px;
 
   min-height: 799px;
-  padding-top: 105px;
+  padding-top: 100px;
 
   background-color: var(--primary-dark);
+}
+
+.card-link-wrapper {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 24px;
 }
 
 .cards-wrapper {
@@ -408,12 +434,18 @@ h4,
 }
 
 .item-link {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  /* flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+  margin: -24px;
+  margin-bottom: -77px;
+  padding: 24px; */
+
   width: 100%;
   height: 100%;
-  margin: -24px;
-  padding: 24px;
+  margin: -10px -24px;
+  padding: 9px 24px;
 
   color: var(--text-color);
   text-decoration: none;
@@ -424,7 +456,10 @@ h4,
 }
 
 .num-title {
-  margin-bottom: 40px;
+  display: block;
+
+  padding-top: 22px;
+  margin-bottom: 42px;
 
   color: var(--primary-dark);
   font-weight: normal;
@@ -435,9 +470,11 @@ h4,
 }
 
 .card-text {
-  margin-top: 5px;
+  margin-top: 15px;
 
   line-height: 1.6em;
+
+  user-select: all;
 }
 
 .item-link:hover .num-title,
