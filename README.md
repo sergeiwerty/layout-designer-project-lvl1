@@ -1,6 +1,6 @@
 ### Hexlet tests and linter status:
 
-![Actions Status](https://github.com/sergeiwerty/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)
+![LayoutDesigner CI](https://github.com/sergeiwerty/layout-designer-project-lvl1/workflows/LayoutDesigner%20CI/badge.svg)
 
 See the project by the link:
-boring-square.surge.sh
+hoc-effect.surge.sh
