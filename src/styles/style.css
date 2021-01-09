@@ -508,7 +508,7 @@ h4,
 
   box-sizing: border-box;
 
-  padding: 15px 15px;
+  padding: 15px 15px 15px 14px;
 }
 
 .input-wrapper {
@@ -520,7 +520,7 @@ h4,
 .email-submit {
   position: relative;
 
-  flex: 1 1 52px;
+  flex: 1 1 62px;
   height: 50px;
 
   background-color: var(--primary-color);
@@ -552,7 +552,7 @@ h4,
 
 .email-label {
   margin-top: 21px;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 
   font-weight: normal;
   font-size: 18px;
