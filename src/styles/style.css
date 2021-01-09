@@ -495,7 +495,7 @@ h4,
 
 .column-text {
   box-sizing: border-box;
-  padding-left: 52px;
+  padding-left: 55px;
 
   font-size: 34px;
   font-family: "Neucha", cursive;
@@ -514,13 +514,13 @@ h4,
 .input-wrapper {
   display: flex;
 
-  width: 482px;
+  width: 484px;
 }
 
 .email-submit {
   position: relative;
 
-  width: 80px;
+  width: 73px;
   height: 50px;
 
   background-color: var(--primary-color);
