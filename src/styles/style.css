@@ -15,7 +15,6 @@
 .content-section {
   position: relative;
 
-  /* top: -100px; */
   top: -109px;
 
   min-height: 805px;
@@ -387,10 +386,6 @@ h4,
 
 .biases-cards {
   position: relative;
-  /* top: -100px;
-
-  min-height: 799px;
-  padding-top: 100px; */
 
   top: -109px;
 
@@ -472,7 +467,7 @@ h4,
 }
 
 .site-footer {
-  margin-top: 190px;
+  padding-top: 90px;
   margin-bottom: 60px;
 }
 
