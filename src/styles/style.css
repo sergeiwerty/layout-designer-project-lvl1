@@ -514,14 +514,15 @@ h4,
 .input-wrapper {
   display: flex;
 
-  width: 484px;
+  width: 485px;
 }
 
 .email-submit {
   position: relative;
 
+  flex: 1 1 50px;
   width: 75px;
-  height: 51px;
+  height: 50px;
 
   background-color: var(--primary-color);
   border: 0;
@@ -560,10 +561,10 @@ h4,
 }
 
 .email-input {
-  box-sizing: border-box;
+  flex: 1 1 423px;
 
-  width: 525px;
-  height: 51px;
+  box-sizing: border-box;
+  height: 50px;
   padding: 15px;
 }
 
