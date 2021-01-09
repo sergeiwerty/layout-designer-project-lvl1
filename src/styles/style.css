@@ -520,8 +520,8 @@ h4,
 .email-submit {
   position: relative;
 
-  width: 72px;
-  height: 52px;
+  width: 75px;
+  height: 51px;
 
   background-color: var(--primary-color);
   border: 0;
@@ -568,7 +568,7 @@ h4,
 }
 
 ::placeholder {
-  color: rgba(117, 117, 117, 0.2);
+  color: rgba(117, 117, 117);
 }
 
 .conditions {
