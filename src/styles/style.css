@@ -16,7 +16,7 @@
   position: relative;
 
   /* top: -100px; */
-  top: -110px;
+  top: -112px;
 
   min-height: 805px;
   padding: 0 165px;
@@ -392,10 +392,10 @@ h4,
   min-height: 799px;
   padding-top: 100px; */
 
-  top: -110px;
+  top: -112px;
 
   min-height: 799px;
-  padding-top: 110px;
+  padding-top: 112px;
 
   background-color: var(--primary-dark);
 }
