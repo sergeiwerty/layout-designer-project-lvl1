@@ -2,13 +2,13 @@
   --primary-color: #fe8a02;
   --darker-primary: #ea7600;
   --primary-dark: #42413c;
-  --text-color: #000;
+  --text-color: #2a2626;
   --translucent-dark: #908d8b;
   --basic-white: #fff;
   --translucent-white: #d7ccc0;
   --light: #f5f4f0;
   --dark: #b09a81;
-  --blue-color: #007dc1;
+  --blue-color: #1085c5;
 }
 
 /* Content Section component */
@@ -552,7 +552,7 @@ h4,
 
 .email-label {
   margin-top: 21px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   font-weight: normal;
   font-size: 18px;
@@ -563,10 +563,8 @@ h4,
   box-sizing: border-box;
 
   width: 525px;
-  height: 52px;
+  height: 51px;
   padding: 15px;
-
-  border: 0;
 }
 
 ::placeholder {
