@@ -15,7 +15,8 @@
 .content-section {
   position: relative;
 
-  top: -100px;
+  /* top: -100px; */
+  top: -110px;
 
   min-height: 805px;
   padding: 0 165px;
@@ -386,10 +387,15 @@ h4,
 
 .biases-cards {
   position: relative;
-  top: -100px;
+  /* top: -100px;
 
   min-height: 799px;
-  padding-top: 100px;
+  padding-top: 100px; */
+
+  top: -110px;
+
+  min-height: 799px;
+  padding-top: 110px;
 
   background-color: var(--primary-dark);
 }
