@@ -513,7 +513,7 @@ h4,
 
 .input-wrapper {
   display: flex;
-  width: 485px;
+  width: 486px;
   height: 50px;
   margin-top: 1px;
 }
@@ -522,7 +522,7 @@ h4,
   position: relative;
 
   padding: 0;
-  flex: 1 1 68px;
+  flex: 1 1 69px;
 
   background-color: var(--primary-color);
   border: 0;
