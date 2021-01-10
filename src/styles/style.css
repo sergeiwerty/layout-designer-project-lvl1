@@ -515,7 +515,8 @@ h4,
   display: flex;
   width: 485px;
   height: 50px;
-  margin-top: 1px;
+  /* margin-top: 1px; */
+  margin-top: -1px;
 }
 
 .email-submit {
@@ -554,12 +555,13 @@ h4,
 .email-label {
   margin-top: 20px;
   margin-bottom: 7px;
-  padding-top: 2px;
+  /* padding-top: 2px; */
+  padding-top: 6px;
 
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
-  letter-spacing: -0.2px;
+  /* letter-spacing: -0.2px; */
 }
 
 .email-input {
