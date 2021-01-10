@@ -508,12 +508,12 @@ h4,
 
   box-sizing: border-box;
 
-  padding: 15px 15px 15px 14px;
+  padding: 15px 15px 15px 15px;
 }
 
 .input-wrapper {
   display: flex;
-  width: 486px;
+  width: 485px;
   height: 50px;
   margin-top: 1px;
 }
@@ -556,7 +556,7 @@ h4,
   margin-bottom: 7px;
 
   font-weight: normal;
-  font-size: 18px;
+  font-size: 17.6px;
   line-height: 160%;
 }
 
