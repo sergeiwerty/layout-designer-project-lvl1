@@ -540,8 +540,8 @@ h4,
   bottom: 0;
   left: 0;
 
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   margin: auto;
 
   overflow: auto;
@@ -553,7 +553,7 @@ h4,
 
 .email-label {
   margin-top: 23px;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 
   font-weight: normal;
   font-size: 18px;
