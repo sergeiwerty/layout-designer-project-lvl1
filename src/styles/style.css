@@ -552,7 +552,7 @@ h4,
 }
 
 .email-label {
-  margin-top: 21px;
+  margin-top: 23px;
   margin-bottom: 8px;
 
   font-weight: normal;
@@ -565,6 +565,7 @@ h4,
 
   box-sizing: border-box;
   padding: 15px;
+  border: 0;
 
   font-size: 13.1px;
   font-family: "Open Sans", sans-serif;
