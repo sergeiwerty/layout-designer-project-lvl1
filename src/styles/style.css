@@ -513,16 +513,18 @@ h4,
 
 .input-wrapper {
   display: flex;
+  flex: 0 0 50px;
   width: 485px;
   height: 50px;
-  /* margin-top: 1px; */
-  margin-top: -1px;
+  margin-top: 1px;
+
+  /* margin-top: -1px; */
 }
 
 .email-submit {
   position: relative;
 
-  flex: 1 1 71px;
+  flex: 0 0 71px;
   padding: 0;
 
   background-color: var(--primary-color);
@@ -553,14 +555,18 @@ h4,
 }
 
 .email-label {
+  flex: 1 1 28px;
+  box-sizing: border-box;
   margin-top: 20px;
   margin-bottom: 7px;
-  /* padding-top: 2px; */
-  padding-top: 6px;
+  padding-top: 2px;
+
+  /* padding-top: 6px; */
 
   font-weight: normal;
   font-size: 18px;
   line-height: 160%;
+
   /* letter-spacing: -0.2px; */
 }
 
@@ -605,8 +611,6 @@ h4,
 
   font-size: 14px;
   line-height: 22.4px;
-
-  opacity: 0;
 }
 
 .site-sources {
