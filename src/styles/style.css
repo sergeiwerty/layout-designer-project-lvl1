@@ -524,7 +524,7 @@ h4,
 .email-submit {
   position: relative;
 
-  flex: 0 0 69px;
+  flex: 1 1 71px;
   padding: 0;
 
   background-color: var(--primary-color);
@@ -571,7 +571,7 @@ h4,
 }
 
 .email-input {
-  flex: 1 1 420px;
+  flex: 1 1 421px;
 
   box-sizing: border-box;
   padding: 15px;
