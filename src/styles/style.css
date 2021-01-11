@@ -567,7 +567,7 @@ h4,
   font-size: 18px;
   line-height: 160%;
 
-  /* letter-spacing: -0.2px; */
+  letter-spacing: -0.2px;
 }
 
 .email-input {
