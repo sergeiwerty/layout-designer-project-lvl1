@@ -557,8 +557,8 @@ h4,
 .email-label {
   flex: 1 1 28px;
   box-sizing: border-box;
-  margin-top: 20px;
-  margin-bottom: 7px;
+  margin-top: 17px;
+  margin-bottom: 10px;
   padding-top: 2px;
 
   /* padding-top: 6px; */
@@ -571,7 +571,7 @@ h4,
 }
 
 .email-input {
-  flex: 1 1 421px;
+  flex: 1 1 420px;
 
   box-sizing: border-box;
   padding: 15px;
@@ -611,6 +611,10 @@ h4,
 
   font-size: 14px;
   line-height: 22.4px;
+}
+
+.copyright-text {
+  margin-top: 18px;
 }
 
 .site-sources {
